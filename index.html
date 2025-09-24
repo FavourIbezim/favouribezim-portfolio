@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="font-inter bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-xl font-bold text-indigo-600">Portfolio</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-indigo-600 font-medium">Home</a>
+                    <a href="aboutus.html" class="hover:text-indigo-600 transition">About</a>
+                    <a href="portfolio.html" class="hover:text-indigo-600 transition">Portfolio</a>
+                    <a href="article.html" class="hover:text-indigo-600 transition">Articles</a>
+                    <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4 shadow-md">
+            <a href="index.html" class="block py-2 text-indigo-600">Home</a>
+            <a href="aboutus.html" class="block py-2 hover:text-indigo-600">About</a>
+            <a href="portfolio.html" class="block py-2 hover:text-indigo-600">Portfolio</a>
+            <a href="article.html" class="block py-2 hover:text-indigo-600">Articles</a>
+            <a href="contact.html" class="block py-2 hover:text-indigo-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 bg-gradient-to-r from-indigo-50 to-blue-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-indigo-600">Favour </span></h1>
+                    <h2 class="text-xl md:text-2xl text-gray-600 mb-6">Fullstack Developer & Software Developer</h2>
+                    <p class="text-gray-600 mb-8 max-w-lg">I design and build scalable web applications, intelligent software solutions, and data-driven insights that empower better decision-making. 
+                                                            With expertise across frontend, backend, cloud integration, and analytics, I transform ideas and raw data into reliable, high-performing products that solve real-world problems.</p>
+                    <a href="portfolio.html" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition inline-block">View Portfolio</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="./public/241388.jpg" alt="Developer working" class="rounded-lg shadow-lg max-w-xs md:max-w-sm lg:max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="mb-4 md:mb-0">© 2024 My Portfolio. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/FavourIbezim" class="hover:text-indigo-400 transition"><i data-feather="github"></i></a>
+                    <a href="https://x.com/favouribezim456" class="hover:text-indigo-400 transition"><i data-feather="twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/favour-ibezim-a957431b5" class="hover:text-indigo-400 transition"><i data-feather="linkedin"></i></a>
+                    <!-- <a href="#" class="hover:text-indigo-400 transition"><i data-feather="instagram"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
