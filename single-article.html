@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Articles</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.10/dist/typography.min.css">
+
+</head>
+<body  class="font-inter bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-xl font-bold text-indigo-600">Portfolio</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-indigo-600 transition">Home</a>
+                    <a href="aboutus.html" class="hover:text-indigo-600 transition">About</a>
+                    <a href="portfolio.html" class="hover:text-indigo-600 transition">Portfolio</a>
+                    <a href="article.html" class="text-indigo-600 font-medium">Articles</a>
+                    <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4 shadow-md">
+            <a href="index.html" class="block py-2 hover:text-indigo-600">Home</a>
+            <a href="aboutus.html" class="block py-2 hover:text-indigo-600">About</a>
+            <a href="portfolio.html" class="block py-2 hover:text-indigo-600">Portfolio</a>
+            <a href="article.html" class="block py-2 text-indigo-600">Articles</a>
+            <a href="contact.html" class="block py-2 hover:text-indigo-600">Contact</a>
+        </div>
+    </nav>
+ 
+  <main id="article-content" class="max-w-3xl mx-auto px-6 py-20 prose prose-lg prose-indigo">
+  <!-- Article loads here -->
+    </main>
+
+    
+    <!-- Article loads here -->
+  </main>
+
+<!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="mb-4 md:mb-0">© 2023 My Portfolio. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/FavourIbezim" class="hover:text-indigo-400 transition"><i data-feather="github"></i></a>
+                    <a href="https://x.com/favouribezim456" class="hover:text-indigo-400 transition"><i data-feather="twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/favour-ibezim-a957431b5" class="hover:text-indigo-400 transition"><i data-feather="linkedin"></i></a>
+                    <!-- <a href="#" class="hover:text-indigo-400 transition"><i data-feather="instagram"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="articles.js"></script>
+    <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Feather icons
+    feather.replace();
+    </script>
+
+</body>
+</html>
